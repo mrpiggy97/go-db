@@ -6,6 +6,11 @@ FROM mcr.microsoft.com/vscode/devcontainers/go:0-${VARIANT}
 
 # [Choice] Node.js version: none, lts/*, 16, 14, 12, 10
 ARG NODE_VERSION="none"
+ENV DB_NAME="platzidb"
+ENV DB_HOST="172.30.0.3"
+ENV DB_PORT="5432"
+ENV DB_USER="mrpiggy97"
+ENV DB_PASSWORD="Megustamasjesus10"
 RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/local/share/nvm/nvm.sh && nvm install ${NODE_VERSION} 2>&1"; fi
 
 # [Optional] Uncomment this section to install additional OS packages.
