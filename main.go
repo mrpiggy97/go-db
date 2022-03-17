@@ -6,7 +6,7 @@ import (
 	"os"
 
 	_ "github.com/lib/pq"
-	groupBY "github.com/mrpiggy97/go-db/groupby"
+	groupBy "github.com/mrpiggy97/go-db/groupby"
 	insertdata "github.com/mrpiggy97/go-db/insertData"
 	"github.com/mrpiggy97/go-db/joins"
 )
@@ -30,6 +30,6 @@ func main() {
 	}
 	insertdata.CreateUser(db)
 	joins.UsersJoinPosts(db)
-	groupBY.PostsByStatus(db)
+	groupBy.PostsByStatus(db)
 	defer db.Close()
 }
