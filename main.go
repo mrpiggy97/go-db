@@ -32,5 +32,6 @@ func main() {
 	joins.UsersJoinPosts(db)
 	groupBy.PostsByStatus(db)
 	fmt.Println("and that's all fellas")
+	fmt.Println("this project used a database created inside a container")
 	defer db.Close()
 }
