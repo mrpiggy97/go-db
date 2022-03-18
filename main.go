@@ -31,6 +31,5 @@ func main() {
 	insertdata.CreateUser(db)
 	joins.UsersJoinPosts(db)
 	groupBy.PostsByStatus(db)
-	fmt.Println("and that's all fellas")
 	defer db.Close()
 }
