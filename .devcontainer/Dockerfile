@@ -7,7 +7,7 @@ FROM mcr.microsoft.com/vscode/devcontainers/go:0-${VARIANT}
 # [Choice] Node.js version: none, lts/*, 16, 14, 12, 10
 ARG NODE_VERSION="none"
 ENV DB_NAME="platzidb"
-ENV DB_HOST="172.30.0.3"
+ENV DB_HOST="172.30.0.1"
 ENV DB_PORT="5432"
 ENV DB_USER="mrpiggy97"
 ENV DB_PASSWORD="Megustamasjesus10"
